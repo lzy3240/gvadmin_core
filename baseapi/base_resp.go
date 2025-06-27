@@ -4,7 +4,7 @@ import (
 	"net/http"
 )
 
-// 通用响应信息
+// CommonResp 通用响应信息
 type CommonResp struct {
 	Code      int         `json:"code"`           //响应编码: 200 成功 500 错误 403 无操作权限 401 鉴权失败  -1  失败
 	Msg       string      `json:"msg"`            //消息内容

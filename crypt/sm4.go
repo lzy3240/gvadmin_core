@@ -5,10 +5,10 @@ import (
 	"crypto/cipher"
 	"encoding/hex"
 	"github.com/tjfoc/gmsm/sm4"
-	"gvadmin_v3/core/config"
+	"gvadmin_core/config"
 )
 
-// SM4加密
+// SM4Encrypt SM4加密
 func SM4Encrypt(data string) (result string, err error) {
 	//字符串转byte切片
 	plainText := []byte(data)
@@ -34,7 +34,7 @@ func SM4Encrypt(data string) (result string, err error) {
 	return cipherString, nil
 }
 
-// SM4解密 传入string 输出string
+// SM4Decrypt SM4解密 传入string 输出string
 func SM4Decrypt(data string) (res string, err error) {
 	//秘钥
 	SM4Key := config.Instance().Crypt.SM4Key

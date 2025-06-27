@@ -3,8 +3,8 @@ package baseservice
 import (
 	"gorm.io/gorm"
 	"gorm.io/gorm/clause"
-	"gvadmin_v3/core/baseservice/search"
-	"gvadmin_v3/core/config"
+	"gvadmin_core/baseservice/search"
+	"gvadmin_core/config"
 	"reflect"
 )
 

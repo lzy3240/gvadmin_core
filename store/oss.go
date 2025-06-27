@@ -3,8 +3,8 @@ package store
 import (
 	"context"
 	"github.com/aliyun/aliyun-oss-go-sdk/oss"
-	"gvadmin_v3/core/config"
-	"gvadmin_v3/core/log"
+	"gvadmin_core/config"
+	"gvadmin_core/log"
 )
 
 type ossClient struct {

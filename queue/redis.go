@@ -2,8 +2,8 @@ package queue
 
 import (
 	"context"
-	"github.com/redis/go-redis/v9"
-	"gvadmin_v3/core/config"
+	redis "github.com/redis/go-redis/v9"
+	"gvadmin_core/config"
 )
 
 //  第三方消息队列: Redis

@@ -1,7 +1,7 @@
 package store
 
 import (
-	"gvadmin_v3/core/config"
+	"gvadmin_core/config"
 	"sync"
 )
 

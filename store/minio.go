@@ -2,10 +2,10 @@ package store
 
 import (
 	"context"
-	"github.com/minio/minio-go/v7"
+	minio "github.com/minio/minio-go/v7"
 	"github.com/minio/minio-go/v7/pkg/credentials"
-	"gvadmin_v3/core/config"
-	"gvadmin_v3/core/log"
+	"gvadmin_core/config"
+	"gvadmin_core/log"
 	"mime"
 	"path/filepath"
 )

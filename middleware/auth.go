@@ -3,9 +3,9 @@ package middleware
 import (
 	"github.com/gin-gonic/gin"
 	"github.com/golang-jwt/jwt"
-	"gvadmin_v3/core/baseapi"
-	"gvadmin_v3/core/config"
-	"gvadmin_v3/core/global/E"
+	"gvadmin_core/baseapi"
+	"gvadmin_core/config"
+	"gvadmin_core/global/E"
 	"net/http"
 	"strings"
 	"time"

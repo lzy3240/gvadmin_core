@@ -2,10 +2,10 @@ package util
 
 import (
 	"golang.org/x/crypto/bcrypt"
-	"gvadmin_v3/core/global/E"
+	"gvadmin_core/global/E"
 )
 
-// 密码加密
+// PasswordHash 密码加密
 func PasswordHash(pwd string) (string, error) {
 	bytes, err := bcrypt.GenerateFromPassword([]byte(pwd+E.Salt), bcrypt.DefaultCost)
 	if err != nil {
@@ -15,7 +15,7 @@ func PasswordHash(pwd string) (string, error) {
 	return string(bytes), err
 }
 
-// 密码验证
+// PasswordVerify 密码验证
 func PasswordVerify(pwd, hash string) bool {
 	err := bcrypt.CompareHashAndPassword([]byte(hash), []byte(pwd+E.Salt))
 

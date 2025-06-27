@@ -5,7 +5,7 @@ import (
 	"encoding/base64"
 	"fmt"
 	"github.com/axgle/mahonia"
-	"gvadmin_v3/core/global/E"
+	"gvadmin_core/global/E"
 	"math/rand"
 	"os"
 	"reflect"
@@ -197,7 +197,7 @@ func LCS(s1 string, s2 string) string {
 	return s1[xLongest-longest : xLongest]
 }
 
-// string转数组
+// SplitNum string转数组
 /* 1,1,2,3,4,5*/
 func SplitNum(data string) []int {
 	var sa = strings.Split(data, ",")
@@ -210,7 +210,7 @@ func SplitNum(data string) []int {
 	return sarr
 }
 
-// string转数组
+// SplitStr string转数组
 /* 1,1,2,3,4,5*/
 func SplitStr(data string) []string {
 	var sa = strings.Split(data, ",")

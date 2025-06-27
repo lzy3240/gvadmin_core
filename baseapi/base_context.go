@@ -4,9 +4,9 @@ import (
 	vd "github.com/bytedance/go-tagexpr/v2/validator"
 	"github.com/gin-gonic/gin"
 	"github.com/gin-gonic/gin/binding"
-	"gvadmin_v3/core/baseapi/constructor"
-	"gvadmin_v3/core/baseservice"
-	"gvadmin_v3/core/util"
+	"gvadmin_core/baseapi/constructor"
+	"gvadmin_core/baseservice"
+	"gvadmin_core/util"
 )
 
 type Api struct {

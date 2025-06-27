@@ -4,13 +4,13 @@ import (
 	"crypto/rand"
 	"encoding/hex"
 	"github.com/tjfoc/gmsm/sm2"
-	"gvadmin_v3/core/config"
+	"gvadmin_core/config"
 	"math/big"
 )
 
 var chipMode = config.Instance().Crypt.ChipMode
 
-/*用于生成sm2密钥对*/
+// GetSm2Keys 用于生成sm2密钥对
 func GetSm2Keys() (string, string, error) {
 	privKey, err := sm2.GenerateKey(rand.Reader) // 生成密钥对
 	if err != nil {

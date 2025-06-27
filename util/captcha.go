@@ -2,7 +2,7 @@ package util
 
 import (
 	"github.com/mojocn/base64Captcha"
-	"gvadmin_v3/core/config"
+	"gvadmin_core/config"
 	"image/color"
 	"time"
 )

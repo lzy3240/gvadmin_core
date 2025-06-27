@@ -11,8 +11,6 @@ import (
 	"time"
 )
 
-// 导出表格
-
 var (
 	defaultSheetName = "Sheet1" //默认Sheet名称
 	defaultHeight    = 25.0     //默认行高度

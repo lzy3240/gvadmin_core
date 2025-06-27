@@ -1,7 +1,7 @@
 package basemodel
 
 import (
-	"gvadmin_v3/core/util"
+	"gvadmin_core/util"
 	"time"
 )
 
